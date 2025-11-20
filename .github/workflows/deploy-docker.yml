@@ -71,8 +71,8 @@ jobs:
           {
             echo 'DOCKER_IMAGE_TAGS<<EOF'
             for tag in ${TAGS}; do
-            echo "𝗋𝗎𝖻𝖺𝗇𝖺𝗋𝗎𝗅/𝗌𝗈𝗆𝗍𝗁𝗂𝗇𝗀𝗂𝗌𝗍𝗁𝖾𝗋𝖾:${tag}"
-            echo "ghcr.io/𝗋𝗎𝖻𝖺𝗇𝖺𝗋𝗎𝗅/𝗌𝗈𝗆𝗍𝗁𝗂𝗇𝗀𝗂𝗌𝗍𝗁𝖾𝗋𝖾:${tag}"
+            echo "viren070/aioStreams:${tag}"
+            echo "ghcr.io/viren070/aioStreams:${tag}"
             done
             echo EOF
           } >> "${GITHUB_ENV}"
