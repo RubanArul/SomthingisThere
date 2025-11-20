@@ -54,6 +54,10 @@ jobs:
             TAGS="${INPUT_REF} nightly"
             CHANNEL="nightly"
             ;;
+          main)  
+            TAGS="latest-dev"
+            CHANNEL="development"
+            ;;
           *)
             echo "Invalid Input Ref: ${INPUT_REF}"
             exit 1
